@@ -16,17 +16,20 @@ namespace JQueryAjaxCRUD.Models
         [StringLength(255)]
         [Column(TypeName = "NVARCHAR")]
         [Display(Name = "Name")]
+        [Required(ErrorMessage = "This field is required.")]
         public string EmployeeName { get; set; }
 
         [StringLength(64)]
         [Column(TypeName = "NVARCHAR")]
         public string Position { get; set; }
 
+        [Required(ErrorMessage = "This field is required.")]
         [StringLength(128)]
         [Column(TypeName = "NVARCHAR")]
         public string Office { get; set; }
 
-        public int Salary { get; set; }
+        [Required(ErrorMessage = "This field is required.")]
+        public int? Salary { get; set; }
 
         [Display(Name = "Image")]
         public string ImagePath { get; set; }

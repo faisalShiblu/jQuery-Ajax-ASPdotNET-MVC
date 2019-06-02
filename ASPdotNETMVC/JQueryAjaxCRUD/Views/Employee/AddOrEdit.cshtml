@@ -5,6 +5,14 @@
     Layout = null;
 }
 
+<style>
+    #Salary::-webkit-inner-spin-button,
+    #Salary::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+</style>
+
 @using (Html.BeginForm("AddOrEdit", "Employee", FormMethod.Post, new { enctype = "multipart/form-data", onSubmit = "return jQueryAjaxPost(this);", data_restUrl = Url.Action("AddOrEdit", "Employee", new { id = 0 }) }))
 {
     @Html.AntiForgeryToken()
@@ -48,7 +56,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Submit" class="btn btn-default" />
+                        <input type="submit" value="Submit" class="btn btn-success" />
                         @if (Model.EmployeeID != 0)
                         {
                             <a class="btn btn-success" onclick="refreshAddNewTab('@Url.Action("AddOrEdit", "Employee", new { id = 0 })',false)"><i class="fa fa-plus"></i> Add New</a>

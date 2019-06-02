@@ -15,6 +15,7 @@
 </div>
 
 <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+
 @section scripts{
 
     @Scripts.Render("~/bundles/jqueryval")
@@ -25,7 +26,7 @@
     <script>
         function activatejQueryTable() {
             $("#employeeTable").DataTable();
-        }
+        };
 
         $(function () {
             activatejQueryTable();

@@ -174,9 +174,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GlobalClass.cs" />
     <Compile Include="Migrations\201906020804319_initDb.cs" />
     <Compile Include="Migrations\201906020804319_initDb.Designer.cs">
       <DependentUpon>201906020804319_initDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906021331555_name, office and salary required.cs" />
+    <Compile Include="Migrations\201906021331555_name, office and salary required.Designer.cs">
+      <DependentUpon>201906021331555_name, office and salary required.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906021416391_make salary nullable.cs" />
+    <Compile Include="Migrations\201906021416391_make salary nullable.Designer.cs">
+      <DependentUpon>201906021416391_make salary nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906021424564_make salary required.cs" />
+    <Compile Include="Migrations\201906021424564_make salary required.Designer.cs">
+      <DependentUpon>201906021424564_make salary required.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -209,6 +222,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\notify.min.js" />
+    <Content Include="Scripts\Scripts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -266,6 +281,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906020804319_initDb.resx">
       <DependentUpon>201906020804319_initDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906021331555_name, office and salary required.resx">
+      <DependentUpon>201906021331555_name, office and salary required.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906021416391_make salary nullable.resx">
+      <DependentUpon>201906021416391_make salary nullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906021424564_make salary required.resx">
+      <DependentUpon>201906021424564_make salary required.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
